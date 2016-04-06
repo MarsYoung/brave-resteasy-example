@@ -12,10 +12,10 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring.version>3.2.2.RELEASE</spring.version>
+    <spring.version>4.2.5.RELEASE</spring.version>
     <resteasy.version>2.3.5.Final</resteasy.version>
     <jetty.version>8.1.9.v20130131</jetty.version>
-    <brave.version>3.1.0</brave.version>
+    <brave.version>3.5.1-SNAPSHOT</brave.version>
   </properties>
   
   <dependencies>
@@ -52,6 +52,12 @@
         <artifactId>brave-resteasy-spring</artifactId>
         <version>${brave.version}</version>
     </dependency>
+      <dependency>
+          <groupId>com.github.kristofa</groupId>
+          <artifactId>brave-spancollector-scribe</artifactId>
+          <version>${brave.version}</version>
+      </dependency>
+
     <dependency>
     	<groupId>org.jboss.resteasy</groupId>
 	    <artifactId>resteasy-spring</artifactId>
