@@ -84,6 +84,7 @@ public class ITRestEasyExample {
 
         @SuppressWarnings("unchecked")
         final ClientResponse<Void> response = (ClientResponse<Void>)client.a();
+        Thread.sleep(20000000l);
         try {
             assertEquals(200, response.getStatus());
         } finally {
